@@ -1,0 +1,59 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="portalportal.controller.View2"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Incident Management"> 
+				<content>
+					<Button press='onbclick' text='Go To Risk'></Button>
+					<VBox alignItems="Center" alignContent='Center' fitContainer='true'>
+					<items>
+					<Table id="Mara" items="{/results}">
+					  <columns>
+					    <Column>
+					      <Text text="Record Number" />
+					    </Column>
+					    <Column>
+					      <Text text="Created By" />
+					    </Column>
+					    <Column>
+					      <Text text="Last Changed By" />
+					    </Column>
+					     <Column>
+					      <Text text="Event Description	" />
+					    </Column>
+					     <Column>
+					      <Text text="Object Number" />
+					    </Column>
+					     <Column>
+					      <Text text="Description of Machine" />
+					    </Column>
+					     <Column>
+					      <Text text="Description of Accident Location" />
+					    </Column>
+					    <Column>
+					      <Text text="Functional Location" />
+					    </Column>
+					  </columns>
+					  <items>
+					    <ColumnListItem>
+					      <cells>
+					         <Text text="{Recn}"></Text>
+					        <Text text="{Crnam}"></Text> 
+					        <Text text="{Updnam}" ></Text>
+					        <Text text="{Evdesc}"></Text> 
+					        <Text text="{Objnr}" ></Text>
+					        <Text text="{Eqdesc}" ></Text>
+					        <Text text="{Aclocdesc}" ></Text>
+					        <Text text="{Tplnr}" ></Text>
+					      </cells>
+					    </ColumnListItem>
+					  </items>
+					</Table>
+				</items>
+				</VBox>
+				</content>
+			
+			</Page>
+		</pages>
+	</App>
+	</mvc:View>
